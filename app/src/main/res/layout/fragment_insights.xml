@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/insightmain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InsightsFragment">
@@ -36,17 +36,15 @@
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="304dp"
+        android:layout_width="0dp"
         android:layout_height="42dp"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="36dp"
-        android:background="@drawable/searchbox"
+        android:background="@drawable/searchbox" style=""
         android:iconifiedByDefault="false"
-        android:theme="@style/CustomEditTextTheme"
-        android:padding="10dp"
         android:queryHint="Search here..."
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/insightsHeading" />
 
